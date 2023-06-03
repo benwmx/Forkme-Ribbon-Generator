@@ -3,18 +3,18 @@ import { create } from "zustand";
 const ribbonStyleStore = (set) => ({
   githubUrl: "https://github.com",
   ribbonColor: "#000000",
-  ribbonHoverColor: "#c11",
+  ribbonHoverColor: "#c122",
   textColor: "#fff",
   textHoverColor: "#fff",
   linesColor: "#fff",
   breakPoint: 800,
-  alignment: "right",
-  verticalPostion: "top",
+  alignment: "left",
+  verticalPosition: "absolute", // or Sticky aka fixed
   shadowColor: { r: 75, g: 75, b: 150, a: 1 },
-  shadowHorizontalLength: 0,
-  shadowVerticalLength: 0,
-  blurRadius: 0,
-  spreadRadius: 0,
+  shadowHorizontalLength: 10,
+  shadowVerticalLength: 10,
+  blurRadius: 10,
+  spreadRadius: 10,
 
   setGithuUrl: (url) => {
     set({ githubUrl: url });

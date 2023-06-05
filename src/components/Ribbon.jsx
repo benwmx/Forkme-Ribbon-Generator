@@ -3,7 +3,9 @@ import { useRibbonStyleStore } from "@/store";
 import { useState } from "react";
 import { useMediaQuery } from "@react-hook/media-query";
 const Ribbon = () => {
+  // To monitor the ribbon hover state.
   const [isHover, setIsHover] = useState(false);
+  // Get the styles for the store.
   const githubUrl = useRibbonStyleStore((state) => state.githubUrl);
   const ribbonColor = useRibbonStyleStore((state) => state.ribbonColor);
   const ribbonHoverColor = useRibbonStyleStore(
@@ -26,8 +28,11 @@ const Ribbon = () => {
   );
   const blurRadius = useRibbonStyleStore((state) => state.blurRadius);
   const spreadRadius = useRibbonStyleStore((state) => state.spreadRadius);
-  const isWideScreen = useMediaQuery(`screen and (min-width: ${breakPoint}px)`);
   const shadowStyle = `${shadowHorizontalLength}px ${shadowVerticalLength}px ${blurRadius}px ${spreadRadius}px rgba(${shadowColor.r}, ${shadowColor.g}, ${shadowColor.b}, ${shadowColor.a})`;
+
+  // Check if the screen matches the breakpoint
+  const isWideScreen = useMediaQuery(`screen and (min-width: ${breakPoint}px)`);
+  // Add the alignment style to ribbon right Or left;
   const rightAlignmentStyle = {
     right: "-60px",
     transform: "rotate(45deg)",

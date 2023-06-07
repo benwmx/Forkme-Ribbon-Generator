@@ -1,5 +1,5 @@
 import { useRibbonStyleStore } from "@/store";
-import styles from "@/styles/ColorButton.module.css";
+import styles from "@/styles/RibbonColors.module.css";
 import { useEffect, useRef, useState } from "react";
 import { HexColorInput, HexColorPicker } from "react-colorful";
 

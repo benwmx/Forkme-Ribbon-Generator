@@ -1,6 +1,6 @@
 import "@/styles/App.css";
 import Ribbon from "@/components/Ribbon";
-import RibbonColors from "@/components/RibbonColors";
+import ColorsController from "@/components/ColorsController";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <Ribbon />
       <fieldset>
         <legend>Customize your Ribbon </legend>
-        <RibbonColors />
+        <ColorsController />
       </fieldset>
     </>
   );

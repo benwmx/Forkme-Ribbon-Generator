@@ -3,7 +3,7 @@ import styles from "@/styles/RibbonColors.module.css";
 import { useEffect, useRef, useState } from "react";
 import { HexColorInput, HexColorPicker } from "react-colorful";
 
-const RibbonColors = () => {
+const ColorsController = () => {
   const [activeButton, setActiveButton] = useState(null);
   const ref = useRef();
   const [color, setColor] = useState("#c122");
@@ -78,4 +78,4 @@ const RibbonColors = () => {
   );
 };
 
-export default RibbonColors;
+export default ColorsController;

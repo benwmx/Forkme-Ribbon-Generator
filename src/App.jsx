@@ -1,14 +1,14 @@
 import "@/styles/App.css";
-import RadioButton from "@/components/RadioButton";
 import Ribbon from "@/components/Ribbon";
+import RibbonColors from "@/components/RibbonColors";
 
 function App() {
   return (
     <>
       <Ribbon />
       <fieldset>
-        <legend>Title</legend>
-        <RadioButton value={"Color"} />
+        <legend>Customize your Ribbon </legend>
+        <RibbonColors />
       </fieldset>
     </>
   );

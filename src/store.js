@@ -3,9 +3,9 @@ import { create } from "zustand";
 const ribbonStyleStore = (set) => ({
   githubUrl: "https://github.com",
   ribbonColor: "#000000",
-  ribbonHoverColor: "#c122",
+  ribbonHoverColor: "#3AA0D7",
   textColor: "#fff",
-  textHoverColor: "#fff",
+  textHoverColor: "#000",
   linesColor: "#fff",
   breakPoint: 800,
   alignment: "left",

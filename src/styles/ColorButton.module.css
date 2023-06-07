@@ -1,0 +1,54 @@
+.container {
+  display: flex;
+}
+
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 3px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.activeButton {
+  background-color: #114712; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  animation: glowing-shadow 1s ease infinite alternate;
+}
+
+@keyframes glowing-shadow {
+  0% {
+    box-shadow: 0px 0px 11px 3px rgba(77, 5, 77, 1);
+  }
+  33% {
+    box-shadow: 0px 0px 11px 3px rgba(77, 5, 77, 1),
+      0px 0px 11px 6px rgb(179, 21, 179);
+  }
+  66% {
+    box-shadow: 0px 0px 11px 3px rgba(77, 5, 77, 1),
+      0px 0px 11px 6px rgb(179, 21, 179), 0px 0px 11px 9px rgb(228, 108, 228);
+  }
+  100% {
+    box-shadow: 0px 0px 11px 3px rgba(77, 5, 77, 1),
+      0px 0px 11px 6px rgb(179, 21, 179), 0px 0px 11px 9px rgb(228, 108, 228),
+      0px 0px 11px 12px rgb(243, 172, 243);
+  }
+}

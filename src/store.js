@@ -11,10 +11,10 @@ const ribbonStyleStore = (set) => ({
   alignment: "left",
   verticalPosition: "absolute", // or Sticky aka fixed
   shadowColor: { r: 75, g: 75, b: 150, a: 1 },
-  shadowHorizontalLength: 10,
-  shadowVerticalLength: 10,
-  blurRadius: 10,
-  spreadRadius: 10,
+  shadowHorizontalOffset: 10,
+  shadowVerticalOffset: 20,
+  shadowBlurRadius: 12,
+  shadowSpreadRadius: 11,
 
   setGithuUrl: (url) => {
     set({ githubUrl: url });
@@ -46,17 +46,17 @@ const ribbonStyleStore = (set) => ({
   setShadowColor: (color) => {
     set({ shadowColor: color });
   },
-  setShadowHorizontalLength: (length) => {
-    set({ shadowHorizontalLength: length });
+  setShadowHorizontalOffset: (offset) => {
+    set({ shadowHorizontalOffset: offset });
   },
-  setShadowVerticalLength: (length) => {
-    set({ shadowVerticalLength: length });
+  setShadowVerticalOffset: (offset) => {
+    set({ shadowVerticalOffset: offset });
   },
-  setBlurRadius: (radius) => {
-    set({ blurRadius: radius });
+  setShadowBlurRadius: (radius) => {
+    set({ shadowBlurRadius: radius });
   },
-  setSpreadRadius: (spread) => {
-    set({ spreadRadius: spread });
+  setShadowSpreadRadius: (spread) => {
+    set({ shadowSpreadRadius: spread });
   },
 });
 

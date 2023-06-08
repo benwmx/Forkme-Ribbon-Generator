@@ -20,15 +20,15 @@ const Ribbon = () => {
     (state) => state.verticalPosition
   );
   const shadowColor = useRibbonStyleStore((state) => state.shadowColor);
-  const shadowHorizontalLength = useRibbonStyleStore(
-    (state) => state.shadowHorizontalLength
+  const shadowHorizontalOffset = useRibbonStyleStore(
+    (state) => state.shadowHorizontalOffset
   );
-  const shadowVerticalLength = useRibbonStyleStore(
-    (state) => state.shadowVerticalLength
+  const shadowVerticalOffset = useRibbonStyleStore(
+    (state) => state.shadowVerticalOffset
   );
-  const blurRadius = useRibbonStyleStore((state) => state.blurRadius);
-  const spreadRadius = useRibbonStyleStore((state) => state.spreadRadius);
-  const shadowStyle = `${shadowHorizontalLength}px ${shadowVerticalLength}px ${blurRadius}px ${spreadRadius}px rgba(${shadowColor.r}, ${shadowColor.g}, ${shadowColor.b}, ${shadowColor.a})`;
+  const blurRadius = useRibbonStyleStore((state) => state.shadowBlurRadius);
+  const spreadRadius = useRibbonStyleStore((state) => state.shadowSpreadRadius);
+  const shadowStyle = `${shadowHorizontalOffset}px ${shadowVerticalOffset}px ${blurRadius}px ${spreadRadius}px rgba(${shadowColor.r}, ${shadowColor.g}, ${shadowColor.b}, ${shadowColor.a})`;
 
   // Check if the screen matches the breakpoint
   const isWideScreen = useMediaQuery(`screen and (min-width: ${breakPoint}px)`);

@@ -9,7 +9,7 @@ const ribbonStyleStore = (set) => ({
   linesColor: "#fff",
   breakPoint: 800,
   alignment: "left",
-  verticalPosition: "absolute", // or Sticky aka fixed
+  verticalPosition: "fixed", // or Sticky aka fixed
   shadowColor: { r: 75, g: 75, b: 150, a: 1 },
   shadowHorizontalOffset: 10,
   shadowVerticalOffset: 20,
@@ -38,7 +38,7 @@ const ribbonStyleStore = (set) => ({
     set({ breakPoint: point });
   },
   setAlignment: (alignment) => {
-    set({ alignment });
+    set({ alignment: alignment });
   },
   setVerticalPosition: (position) => {
     set({ verticalPosition: position });

@@ -2,6 +2,7 @@ import "@/styles/App.css";
 import Ribbon from "@/components/Ribbon";
 import ColorsController from "@/components/ColorsController";
 import ShadowController from "./components/ShadowController";
+import AlignmentPosition from "./components/AlignmentPosition";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         </fieldset>
         <fieldset>
           <legend>Alignment & Position</legend>
+          <AlignmentPosition />
         </fieldset>
         <fieldset>
           <legend>Copy Your Code</legend>

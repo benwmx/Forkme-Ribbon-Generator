@@ -3,6 +3,7 @@ import Ribbon from "@/components/Ribbon";
 import ColorsController from "@/components/ColorsController";
 import ShadowController from "./components/ShadowController";
 import AlignmentPosition from "./components/AlignmentPosition";
+import GeneratedCode from "./components/GeneratedCode";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         </fieldset>
         <fieldset>
           <legend>Copy Your Code</legend>
+          <GeneratedCode />
         </fieldset>
       </fieldset>
     </>

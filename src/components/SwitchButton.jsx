@@ -10,7 +10,6 @@ const SwitchButton = ({
   offBtnColor,
   id,
 }) => {
-  console.log(id);
   return (
     <>
       <input

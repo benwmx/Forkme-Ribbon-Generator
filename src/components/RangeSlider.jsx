@@ -1,7 +1,6 @@
 const RangeSlider = ({ label, setFunction, value, min, max }) => {
   const handleChange = (event) => {
     setFunction(parseInt(event.target.value));
-    console.log("taget ", label, "value", event.target.value);
   };
   return (
     <div>

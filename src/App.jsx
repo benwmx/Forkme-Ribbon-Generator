@@ -4,12 +4,17 @@ import ColorsController from "@/components/ColorsController";
 import ShadowController from "./components/ShadowController";
 import AlignmentPosition from "./components/AlignmentPosition";
 import GeneratedCode from "./components/GeneratedCode";
+import UrlText from "./components/UrlText";
 
 function App() {
   return (
     <>
       <Ribbon />
       <fieldset>
+        <fieldset>
+          <legend>Github Url & Text</legend>
+          <UrlText />
+        </fieldset>
         <legend>Customize your Ribbon </legend>
         <fieldset>
           <legend>Colors</legend>

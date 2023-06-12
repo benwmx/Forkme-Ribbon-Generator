@@ -2,6 +2,7 @@ import { create } from "zustand";
 
 const ribbonStyleStore = (set) => ({
   githubUrl: "https://github.com",
+  ribbonText: "Fork me On GitHub",
   ribbonColor: "#000000",
   ribbonHoverColor: "#3AA0D7",
   textColor: "#fff",
@@ -16,8 +17,11 @@ const ribbonStyleStore = (set) => ({
   shadowBlurRadius: 12,
   shadowSpreadRadius: 11,
 
-  setGithuUrl: (url) => {
+  setGithubUrl: (url) => {
     set({ githubUrl: url });
+  },
+  setRibbonText: (text) => {
+    set({ ribbonText: text });
   },
   setRibbonColor: (color) => {
     set({ ribbonColor: color });

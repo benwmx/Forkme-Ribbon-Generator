@@ -7,6 +7,7 @@ const Ribbon = () => {
   const [isHover, setIsHover] = useState(false);
   // Get the styles for the store.
   const githubUrl = useRibbonStyleStore((state) => state.githubUrl);
+  const ribbonText = useRibbonStyleStore((state) => state.ribbonText);
   const ribbonColor = useRibbonStyleStore((state) => state.ribbonColor);
   const ribbonHoverColor = useRibbonStyleStore(
     (state) => state.ribbonHoverColor
@@ -80,7 +81,7 @@ const Ribbon = () => {
           style={{ backgroundColor: linesColor }}
           className={styles.before}
         ></span>
-        Fork me on Github
+        {ribbonText}
         <span
           style={{ backgroundColor: linesColor }}
           className={styles.after}

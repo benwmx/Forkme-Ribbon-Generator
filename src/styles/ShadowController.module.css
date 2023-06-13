@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 40rem;
+  padding: 2rem;
+}
+
+.rangeSliders {
+  width: 255px;
+}

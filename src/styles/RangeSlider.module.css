@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputText {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input {
+  display: inline-block;
+  width: 70px;
+}
+
+.input input {
+  width: 40px;
+  border: dashed;
+}
+.input input:focus {
+  border: solid;
+  outline: none;
+}
+
+/* for Mozilla Firefox */
+
+input[type="range"]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 13px;
+  width: 10px;
+  border-radius: 3px;
+  background: #eecece;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+
+/* for chromium based browsers */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  appearance: none !important;
+  border: none;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  background: goldenrod;
+  margin-top: -4px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}

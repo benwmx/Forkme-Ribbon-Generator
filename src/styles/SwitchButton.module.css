@@ -12,7 +12,7 @@
   width: 50px;
   height: 12.5px;
   /* background: grey; */
-  border-radius: 100px;
+  border-radius: 3px;
   position: relative;
   transition: background-color 0.2s;
 }
@@ -24,7 +24,7 @@
   left: 1px;
   width: 11px;
   height: 11px;
-  border-radius: 45px;
+  border-radius: 3px;
   transition: 0.2s;
   /* background: #fff; */
   box-shadow: 0 0 1px 0 rgba(10, 10, 10, 0.29);

@@ -1,6 +1,7 @@
 import RangeSlider from "@/components/RangeSlider";
 import { useRibbonStyleStore } from "@/store";
 import { RgbaColorPicker } from "react-colorful";
+import styles from "@/styles/ShadowController.module.css";
 
 const ShadowController = () => {
   const shadowColor = useRibbonStyleStore((state) => state.shadowColor);
@@ -30,8 +31,8 @@ const ShadowController = () => {
     (state) => state.setShadowSpreadRadius
   );
   return (
-    <>
-      <div className="RangerSliders">
+    <div className={styles.container}>
+      <div className={styles.rangeSliders}>
         <RangeSlider
           label="Horizontal Offset"
           setFunction={setShadowHorizontalOffset}
@@ -39,6 +40,7 @@ const ShadowController = () => {
           min={-20}
           max={20}
           key={1}
+          step={1}
         />
         <RangeSlider
           label="Vertical Offset"
@@ -46,6 +48,7 @@ const ShadowController = () => {
           value={shadowVerticalOffset}
           min={-20}
           max={20}
+          step={1}
           key={2}
         />
         <RangeSlider
@@ -54,6 +57,7 @@ const ShadowController = () => {
           value={shadowBlurRadius}
           min={0}
           max={20}
+          step={1}
           key={3}
         />
         <RangeSlider
@@ -62,13 +66,14 @@ const ShadowController = () => {
           value={shadowSpreadRadius}
           min={0}
           max={20}
+          step={1}
           key={4}
         />
       </div>
       <div>
         <RgbaColorPicker color={shadowColor} onChange={setShadowColor} />
       </div>
-    </>
+    </div>
   );
 };
 export default ShadowController;

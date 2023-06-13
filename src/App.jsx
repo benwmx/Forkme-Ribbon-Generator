@@ -5,12 +5,13 @@ import ShadowController from "./components/ShadowController";
 import AlignmentPosition from "./components/AlignmentPosition";
 import GeneratedCode from "./components/GeneratedCode";
 import UrlText from "./components/UrlText";
+import BreakPoints from "./components/BreakPoints";
 
 function App() {
   return (
-    <>
+    <div>
       <Ribbon />
-      <fieldset>
+      <fieldset className="container">
         <fieldset>
           <legend>Github Url & Text</legend>
           <UrlText />
@@ -29,11 +30,15 @@ function App() {
           <AlignmentPosition />
         </fieldset>
         <fieldset>
-          <legend>Copy Your Code</legend>
-          <GeneratedCode />
+          <legend>Responsive BreakPoint</legend>
+          <BreakPoints />
         </fieldset>
       </fieldset>
-    </>
+      <fieldset>
+        <legend>Copy Your Code</legend>
+        <GeneratedCode />
+      </fieldset>
+    </div>
   );
 }
 

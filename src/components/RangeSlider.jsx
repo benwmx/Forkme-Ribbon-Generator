@@ -18,7 +18,6 @@ const RangeSlider = ({ label, setFunction, value, min, max, step }) => {
           <label htmlFor="customInput">px</label>
         </div>
       </div>
-
       <input
         type="range"
         min={min}

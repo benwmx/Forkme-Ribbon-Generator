@@ -2,7 +2,6 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -15,8 +14,8 @@
 
 body {
   margin: 0;
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   /* min-width: 320px;
   min-height: 100vh; */
 }
@@ -26,17 +25,38 @@ h1 {
   line-height: 1.1;
 }
 
-/* .container {
+.main {
   display: flex;
-  flex-basis: 20rem;
-  flex-wrap: wrap;
-} */
+  /* background-color: #ececec; */
+}
 
-fieldset {
+.main > fieldset {
+  flex: 1;
   border-radius: 1em;
+  background-color: #282c34;
+  border: 4px solid #e6e1dd;
+  margin: 0 5px;
+  -webkit-box-shadow: 0px -3px 16px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px -3px 16px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px -3px 16px 3px rgba(0, 0, 0, 0.4);
+}
+
+.controllers fieldset {
+  flex: 1;
+  border-radius: 1em;
+  border: 2px solid #ede9e3;
+  margin: 8px 2px;
+  color: #caa698;
+}
+
+legend {
+  background-color: #5b6577;
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
 }
 
 div.react-colorful {
-  width: 255px;
-  height: 255px;
+  width: 200px;
+  height: 200px;
 }

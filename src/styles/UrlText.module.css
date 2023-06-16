@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+.container input {
+  /* width: 70%; */
+  height: 25px;
+  background-color: #424855;
+  color: white;
+  border: 1px solid #ede9e3;
+  border-radius: 5px;
+  /* margin: 0 4px; */
+}
+
+.container input:focus {
+  outline: none;
+}

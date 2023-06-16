@@ -1,10 +1,10 @@
 .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   /* width: 50wv; */
   padding: 5px;
 }
 
 .rangeSliders {
-  width: 50%;
+  width: 40%;
 }

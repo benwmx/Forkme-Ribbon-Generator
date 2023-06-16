@@ -10,16 +10,19 @@
 }
 
 .input {
-  display: inline-block;
+  display: flex;
+  justify-content: space-around;
   width: 70px;
 }
 
-.input input {
+input[type="text"] {
   width: 40px;
-  border: dashed;
+  border: 1px solid #ede9e3;
+  border-radius: 3px;
+  background-color: #424855;
+  color: white;
 }
-.input input:focus {
-  border: solid;
+input[type="text"]:focus {
   outline: none;
 }
 

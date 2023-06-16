@@ -49,6 +49,20 @@ h1 {
   color: white;
 }
 
+.colors input {
+  width: 95%;
+  height: 25px;
+  background-color: #424855;
+  color: white;
+  border: 1px solid #ede9e3;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.colors input:focus {
+  outline: none;
+}
+
 legend {
   background-color: #5b6577;
   color: white;

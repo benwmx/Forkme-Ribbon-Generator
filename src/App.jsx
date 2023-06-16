@@ -18,7 +18,7 @@ function App() {
             <UrlText />
           </fieldset>
           <legend>Customize your Ribbon </legend>
-          <fieldset>
+          <fieldset className="colors">
             <legend>Colors</legend>
             <ColorsController />
           </fieldset>

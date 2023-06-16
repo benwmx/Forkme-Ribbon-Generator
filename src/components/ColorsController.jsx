@@ -72,7 +72,11 @@ const ColorsController = () => {
       </div>
       <div className={styles.colorpicker}>
         <HexColorPicker color={color} onChange={handleColorSetting} />
-        <HexColorInput color={color} onChange={handleColorSetting} />
+        <HexColorInput
+          color={color}
+          onChange={handleColorSetting}
+          className={styles.colorInput}
+        />
       </div>
     </div>
   );

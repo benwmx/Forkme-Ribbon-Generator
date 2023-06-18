@@ -9,7 +9,7 @@ const UrlText = () => {
   };
   return (
     <div className={styles.container}>
-      <label htmlFor="url">Url :</label>
+      <label htmlFor="url">Url</label>
       <input
         type="text"
         id="url"
@@ -17,7 +17,7 @@ const UrlText = () => {
         value={githubUrl}
         onChange={handleChange}
       />
-      <label htmlFor="text">Text :</label>
+      <label htmlFor="text">Text</label>
       <input
         className={styles.text}
         type="text"

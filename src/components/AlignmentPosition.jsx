@@ -1,5 +1,6 @@
 import SwitchButton from "@/components/SwitchButton";
-import { useState } from "react";
+// import { useState } from "react";
+import styles from "@/styles/AlignmentPosition.module.css";
 import { useRibbonStyleStore } from "@/store";
 
 const AlignmentPosition = () => {
@@ -21,34 +22,38 @@ const AlignmentPosition = () => {
   };
   return (
     <>
-      <div className="alignmentSection">
-        <span>Alignment</span>
-        <p>Left</p>
+      <div className={styles.container}>
+        <span className={styles.title}>Alignment </span>
+        <div className={styles.control}>
+          <p className={styles.left}>Left</p>
 
-        <SwitchButton
-          handleToggle={handleAlignment}
-          isOn={alignment === "left" ? false : true}
-          onBgColor="green"
-          onBtnColor="white"
-          offBgColor="red"
-          offBtnColor="black"
-          id={"alignment"}
-        />
-        <p>Right</p>
+          <SwitchButton
+            handleToggle={handleAlignment}
+            isOn={alignment === "left" ? false : true}
+            onBgColor="#AC7769"
+            onBtnColor="#EDE9E3"
+            offBgColor="#54627b"
+            offBtnColor="#EDE9E3"
+            id={"alignment"}
+          />
+          <p className={styles.right}>Right</p>
+        </div>
       </div>
-      <div className="positionSection">
-        <span>Vertical Position</span>
-        <p>Top</p>
-        <SwitchButton
-          handleToggle={handleVerticalPosition}
-          isOn={verticalPosition === "absolute" ? false : true}
-          onBgColor="green"
-          onBtnColor="white"
-          offBgColor="red"
-          offBtnColor="black"
-          id={"position"}
-        />
-        <p>Sticky</p>
+      <div className={styles.container}>
+        <span className={styles.title}>Vertical Position :</span>
+        <div className={styles.control}>
+          <p className={styles.top}>Top</p>
+          <SwitchButton
+            handleToggle={handleVerticalPosition}
+            isOn={verticalPosition === "absolute" ? false : true}
+            onBgColor="#1e9aa1"
+            onBtnColor="#EDE9E3"
+            offBgColor="#a5340f"
+            offBtnColor="#EDE9E3"
+            id={"position"}
+          />
+          <p className={styles.sticky}>Sticky</p>
+        </div>
       </div>
     </>
   );

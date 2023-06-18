@@ -6,6 +6,7 @@ import AlignmentPosition from "./components/AlignmentPosition";
 import GeneratedCode from "./components/GeneratedCode";
 import UrlText from "./components/UrlText";
 import BreakPoints from "./components/BreakPoints";
+import { ImFlag } from "react-icons/im";
 
 function App() {
   return (
@@ -13,27 +14,26 @@ function App() {
       <Ribbon />
       <div className="main">
         <fieldset className="controllers">
-          <fieldset>
-            <legend>Github Url & Text</legend>
-            <UrlText />
-          </fieldset>
           <legend>Customize your Ribbon </legend>
-          <fieldset className="colors">
-            <legend>Colors</legend>
-            <ColorsController />
-          </fieldset>
-          <fieldset>
-            <legend>Shadow</legend>
-            <ShadowController />
-          </fieldset>
-          <fieldset>
-            <legend>Alignment & Position</legend>
-            <AlignmentPosition />
-          </fieldset>
-          <fieldset>
-            <legend>Responsive BreakPoint</legend>
-            <BreakPoints />
-          </fieldset>
+          <div className="line"></div>
+
+          <p className="title">
+            <ImFlag />
+            {" Ribbon"}
+          </p>
+          <div className="line"></div>
+
+          <UrlText className="element" />
+          <ColorsController className="element" />
+          <AlignmentPosition className="element" />
+          <BreakPoints className="element" />
+          <div className="line"></div>
+          <p className="title">
+            <ImFlag />
+            {" Shadow"}
+          </p>
+          <div className="line"></div>
+          <ShadowController className="element" />
         </fieldset>
         <fieldset className="generatedCode">
           <legend>Copy Your Code</legend>

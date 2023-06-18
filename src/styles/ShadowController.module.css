@@ -1,7 +1,9 @@
 .container {
   display: flex;
-  justify-content: space-around;
-  /* width: 50wv; */
+  justify-content: space-between;
+  /* background-image: url("../assets/bitmap.png");
+  background-repeat: no-repeat;
+  background-position: bottom right; */
   padding: 5px;
 }
 

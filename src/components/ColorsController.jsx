@@ -70,12 +70,20 @@ const ColorsController = () => {
           </button>
         ))}
       </div>
-      <div className={styles.colorpicker}>
+      <div className={styles.colorPicker}>
         <HexColorPicker color={color} onChange={handleColorSetting} />
         <HexColorInput
           color={color}
           onChange={handleColorSetting}
           className={styles.colorInput}
+          style={{
+            backgroundColor: "#424855",
+            color: "white",
+            border: "1px solid #ede9e3",
+            borderRadius: "5px",
+            marginTop: "20px",
+            width: "95%",
+          }}
         />
       </div>
     </div>

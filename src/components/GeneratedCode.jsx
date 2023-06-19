@@ -51,6 +51,21 @@ const GeneratedCode = () => {
     shadowVerticalOffset,
     shadowBlurRadius,
     shadowSpreadRadius,
+    setGithubUrl,
+    setRibbonText,
+    setRibbonColor,
+    setRibbonHoverColor,
+    setTextColor,
+    setTextHoverColor,
+    setLinesColor,
+    setBreakPoint,
+    setAlignment,
+    setVerticalPosition,
+    setShadowColor,
+    setShadowHorizontalOffset,
+    setShadowVerticalOffset,
+    setShadowBlurRadius,
+    setShadowSpreadRadius,
   } = useRibbonStyleStore();
 
   const generateCode = () => {
@@ -116,7 +131,9 @@ const GeneratedCode = () => {
     }
   </style>
   <span class="ribbon">
-    <a href="${githubUrl}">${ribbonText}</a>
+    <a href="${githubUrl}">
+    ${ribbonText}
+    </a>
   </span>`);
   };
   const copyToClipBoard = () => {
@@ -129,7 +146,27 @@ const GeneratedCode = () => {
         setMessage(error);
       });
   };
+  const reset = () => {
+    setGithubUrl("https://github.com/benwmx/ForkMe-Generator");
+    setRibbonText("Fork me On GitHub");
+    setRibbonColor("#000000");
+    setRibbonHoverColor("#7A9ADA");
+    setTextColor("#fff");
+    setTextHoverColor("#ffff");
+    setLinesColor("#fff");
+    setBreakPoint(800);
+    setAlignment("right");
+    setVerticalPosition("fixed");
+    setShadowColor({ r: 0, g: 0, b: 0, a: 0.8 });
+    setShadowHorizontalOffset(4);
+    setShadowVerticalOffset(4);
+    setShadowBlurRadius(10);
+    setShadowSpreadRadius(0);
+    setLanguage("text");
+    setResult("Reseted To This :)\n" + githubLogo);
+  };
   useEffect(() => {
+    console.log("effect");
     if (language === "html") generateCode();
   }, [
     githubUrl,

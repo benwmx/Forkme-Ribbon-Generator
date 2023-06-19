@@ -1,7 +1,7 @@
 import { create } from "zustand";
 
 const ribbonStyleStore = (set) => ({
-  githubUrl: "https://github.com",
+  githubUrl: "https://github.com/benwmx/ForkMe-Generator",
   ribbonText: "Fork me On GitHub",
   ribbonColor: "#000000",
   ribbonHoverColor: "#7A9ADA",

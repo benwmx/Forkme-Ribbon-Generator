@@ -6,32 +6,39 @@ import { HexColorInput, HexColorPicker } from "react-colorful";
 const ColorsController = () => {
   const [activeButton, setActiveButton] = useState(null);
   const ref = useRef();
-  const [color, setColor] = useState("#c122");
+  const [color, setColor] = useState("#aaa");
+  const {
+    setRibbonColor,
+    setRibbonHoverColor,
+    setTextColor,
+    setTextHoverColor,
+    setLinesColor,
+  } = useRibbonStyleStore();
   const buttons = [
     {
       name: "ribbonColor",
       buttonText: "Ribbon",
-      setterFunction: useRibbonStyleStore((state) => state.setRibbonColor),
+      setterFunction: setRibbonColor,
     },
     {
       name: "ribbonHoverColor",
       buttonText: "Ribbon Hover",
-      setterFunction: useRibbonStyleStore((state) => state.setRibbonHoverColor),
+      setterFunction: setRibbonHoverColor,
     },
     {
       name: "textColor",
       buttonText: "Text",
-      setterFunction: useRibbonStyleStore((state) => state.setTextColor),
+      setterFunction: setTextColor,
     },
     {
       name: "textHoverColor",
       buttonText: "Text Hover",
-      setterFunction: useRibbonStyleStore((state) => state.setTextHoverColor),
+      setterFunction: setTextHoverColor,
     },
     {
       name: "linesColor",
       buttonText: "Lines",
-      setterFunction: useRibbonStyleStore((state) => state.setLinesColor),
+      setterFunction: setLinesColor,
     },
   ];
   const handleClick = (event) => {

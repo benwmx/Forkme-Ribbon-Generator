@@ -4,14 +4,8 @@ import styles from "@/styles/AlignmentPosition.module.css";
 import { useRibbonStyleStore } from "@/store";
 
 const AlignmentPosition = () => {
-  const alignment = useRibbonStyleStore((state) => state.alignment);
-  const verticalPosition = useRibbonStyleStore(
-    (state) => state.verticalPosition
-  );
-  const setAlignment = useRibbonStyleStore((state) => state.setAlignment);
-  const setVerticalPosition = useRibbonStyleStore(
-    (state) => state.setVerticalPosition
-  );
+  const { alignment, verticalPosition, setAlignment, setVerticalPosition } =
+    useRibbonStyleStore();
   const handleAlignment = () => {
     const newAlignment = alignment === "right" ? "left" : "right";
     setAlignment(newAlignment);

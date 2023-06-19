@@ -52,9 +52,9 @@ const GeneratedCode = () => {
     shadowBlurRadius,
     shadowSpreadRadius,
   } = useRibbonStyleStore();
-  const rotation = alignment === "right" ? "+" : "-";
 
   const generateCode = () => {
+    const rotation = alignment === "right" ? "+" : "-";
     setLanguage("html");
     setMessage("");
     setResult(`<style>
@@ -170,7 +170,9 @@ const GeneratedCode = () => {
       >
         {result}
       </SyntaxHighlighter>
-      <button className={styles.resetBtn}>Reset</button>
+      <button className={styles.resetBtn} onClick={reset}>
+        Reset
+      </button>
     </div>
   );
 };

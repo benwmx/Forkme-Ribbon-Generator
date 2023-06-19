@@ -1,4 +1,5 @@
 import styles from "@/styles/Info.module.css";
+import icon from "@/assets/github.gif";
 
 const Info = () => {
   return (
@@ -10,9 +11,10 @@ const Info = () => {
       <a
         href="https://github.com/benwmx/ForkMe-Generator"
         className={styles.logo}
-        target="_blank" rel="noreferrer"
+        target="_blank"
+        rel="noreferrer"
       >
-        <img src="/src/assets/github.gif" alt="animated github logo" />
+        <img src={icon} alt="animated github logo" />
       </a>
     </fieldset>
   );

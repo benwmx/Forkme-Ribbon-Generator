@@ -166,7 +166,6 @@ const GeneratedCode = () => {
     setResult("Reseted To This :)\n" + githubLogo);
   };
   useEffect(() => {
-    console.log("effect");
     if (language === "html") generateCode();
   }, [
     githubUrl,

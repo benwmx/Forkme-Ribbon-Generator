@@ -12,6 +12,19 @@ import Info from "@/components/Info";
 function App() {
   return (
     <>
+      <a title="Web Analytics" href="https://clicky.com/101414810">
+        <img
+          alt="Clicky"
+          src="//static.getclicky.com/media/links/badge.gif"
+          border="0"
+        />
+      </a>
+      <script
+        async
+        data-id="101414810"
+        src="//static.getclicky.com/js"
+      ></script>
+
       <Ribbon />
       <div className="main">
         <fieldset className="controllers">

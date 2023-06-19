@@ -4,18 +4,18 @@ const ribbonStyleStore = (set) => ({
   githubUrl: "https://github.com",
   ribbonText: "Fork me On GitHub",
   ribbonColor: "#000000",
-  ribbonHoverColor: "#3AA0D7",
+  ribbonHoverColor: "#7A9ADA",
   textColor: "#fff",
-  textHoverColor: "#000",
+  textHoverColor: "#fff",
   linesColor: "#fff",
   breakPoint: 800,
-  alignment: "left",
+  alignment: "right",
   verticalPosition: "fixed", // or Sticky aka fixed
-  shadowColor: { r: 75, g: 75, b: 150, a: 1 },
-  shadowHorizontalOffset: 10,
-  shadowVerticalOffset: 20,
-  shadowBlurRadius: 12,
-  shadowSpreadRadius: 11,
+  shadowColor: { r: 0, g: 0, b: 0, a: 0.8 },
+  shadowHorizontalOffset: 4,
+  shadowVerticalOffset: 4,
+  shadowBlurRadius: 10,
+  shadowSpreadRadius: 0,
 
   setGithubUrl: (url) => {
     set({ githubUrl: url });

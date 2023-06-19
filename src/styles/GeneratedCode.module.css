@@ -1,0 +1,50 @@
+.container {
+  height: 808px;
+  overflow-y: hidden;
+}
+
+.copySection {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  color: #ffffff;
+  background-color: #272727;
+  border-radius: 20px 20px 0 0;
+}
+
+.copy {
+  color: #1e9aa1;
+  margin: 0;
+  display: inline;
+}
+
+.copyBtn {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.generateBtn,
+.resetBtn {
+  border: none;
+  padding: 8px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.generateBtn {
+  background-color: #7a9ada; /* Green */
+  margin: 5px auto;
+  margin-bottom: 5px;
+}
+
+.resetBtn {
+  background-color: #cb3f4b;
+}

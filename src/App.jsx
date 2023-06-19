@@ -7,6 +7,7 @@ import GeneratedCode from "./components/GeneratedCode";
 import UrlText from "./components/UrlText";
 import BreakPoints from "./components/BreakPoints";
 import { ImFlag } from "react-icons/im";
+import Info from "@/components/Info";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <GeneratedCode />
         </fieldset>
       </div>
+      <Info />
     </>
   );
 }

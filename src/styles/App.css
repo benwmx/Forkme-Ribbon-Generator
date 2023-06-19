@@ -39,6 +39,10 @@ fieldset {
   height: min-content;
 }
 
+.generatedCode legend {
+  text-align: center;
+}
+
 .line {
   background-color: #e6e1dd;
   width: 30px;

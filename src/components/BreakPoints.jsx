@@ -6,7 +6,7 @@ const BreakPoints = () => {
   return (
     <div>
       <RangeSlider
-        label="Break Point"
+        label="Resposive Break Point"
         setFunction={setBreakPoint}
         value={breakPoint}
         min={400}

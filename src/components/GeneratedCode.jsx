@@ -191,8 +191,8 @@ const GeneratedCode = () => {
         Generate Code
       </button>
       <div className={styles.copySection}>
-        <p className={styles.copy}>{message}</p>
         <FaRegClipboard className={styles.copyBtn} onClick={copyToClipBoard} />
+        <p className={styles.copy}>{message}</p>
       </div>
       <SyntaxHighlighter
         language={language}

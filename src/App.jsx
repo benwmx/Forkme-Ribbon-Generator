@@ -12,12 +12,6 @@ import Info from "@/components/Info";
 function App() {
   return (
     <>
-      <script
-        async
-        data-id="101414810"
-        src="//static.getclicky.com/js"
-      ></script>
-
       <Ribbon />
       <div className="main">
         <fieldset className="controllers">
